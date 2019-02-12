@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block bb %}
+    <h1>{{todo.title}}</h1>
+    <h3>{{todo.user}}</h3>
+    <a href="{% url 'todos:update' todo.id %}">수정하기</a>
+    <hr>
+    
+
+{% endblock %}
